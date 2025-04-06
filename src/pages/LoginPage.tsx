@@ -12,8 +12,7 @@ import {
   Link,
 } from "@mui/material";
 
-import {LockOutlined } from "@mui/icons-material";
-
+import { LockOutlined } from "@mui/icons-material";
 
 import {} from "@mui/material/styles";
 
@@ -60,20 +59,18 @@ const LoginPage = () => {
         <Button variant="contained" type="submit" fullWidth sx={{ mt: 1 }}>
           Login
         </Button>
-        <Grid container justifyContent="space-between" sx={{ mt: 1}}>
-          <Grid  size={6} >
+        <Grid container justifyContent="space-between" sx={{ mt: 1 }}>
+          <Grid size={6}>
             <Link component={RouterLink} to="/forgot-password" variant="body2">
               Forgot password?
             </Link>
-        </Grid>
-        <Grid  size={6} >
+          </Grid>
+          <Grid size={6}>
             <Link component={RouterLink} to="#" variant="body2">
               Sign Up
             </Link>
+          </Grid>
         </Grid>
-        </Grid>
-      
-       
       </Paper>
     </Container>
   );
