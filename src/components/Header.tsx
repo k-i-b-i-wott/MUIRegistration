@@ -7,15 +7,15 @@ import { useState, SyntheticEvent } from "react";
 
 const Header = () => {
   const [value,setValue]= useState('home')
-  const handleChange = (event: SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event: SyntheticEvent, newValue: string) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <AppBar sx={{b:3}}>
         <Toolbar>
             <AddHomeIcon fontSize="large" />
-            <Tabs value={value} indicatorColor="secondary" textColor="inherit"  onChange={handleChange} sx={{ alignItems: "center", marginLeft: "20px" }}>
+            <Tabs value={value} indicatorColor="secondary" textColor="inherit"  onChange={(e,newValue) => setValue(newValue )} sx={{ alignItems: "center", marginLeft: "20px" }}>
                 <Tab  value= "home" label="Home" />
                 
                 <Tab  value= "contact" label="Contact" />
