@@ -18,6 +18,8 @@ import {} from "@mui/material/styles";
 
 import Paper from "@mui/material/Paper";
 
+import SignUpPage from "./SignUpPage";
+
 const LoginPage = () => {
   return (
     <Container maxWidth="xs">
@@ -66,7 +68,7 @@ const LoginPage = () => {
             </Link>
           </Grid>
           <Grid size={6}>
-            <Link component={RouterLink} to="#" variant="body2">
+            <Link component={RouterLink} to="/signup" variant="body2">
               Sign Up
             </Link>
           </Grid>
