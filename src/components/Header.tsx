@@ -1,7 +1,7 @@
 import { AppBar, Tabs,Tab, Toolbar, Button } from "@mui/material"
 import AddHomeIcon from '@mui/icons-material/AddHome';
 import { Link } from "react-router-dom";
-import { useState, SyntheticEvent } from "react";
+import { useState} from "react";
 
 
 
@@ -15,7 +15,7 @@ const Header = () => {
     <AppBar sx={{b:3}}>
         <Toolbar>
             <AddHomeIcon fontSize="large" />
-            <Tabs value={value} indicatorColor="secondary" textColor="inherit"  onChange={(e,newValue) => setValue(newValue )} sx={{ alignItems: "center", marginLeft: "20px" }}>
+            <Tabs value={value} indicatorColor="secondary" textColor="inherit"  onChange={(_e,newValue) => setValue(newValue )} sx={{ alignItems: "center", marginLeft: "20px" }}>
                 <Tab  value= "home" label="Home" />
                 
                 <Tab  value= "contact" label="Contact" />

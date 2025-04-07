@@ -18,7 +18,7 @@ import {} from "@mui/material/styles";
 
 import Paper from "@mui/material/Paper";
 
-import SignUpPage from "./SignUpPage";
+
 
 const LoginPage = () => {
   return (

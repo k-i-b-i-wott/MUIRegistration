@@ -1,7 +1,7 @@
 import {LockOpen } from "@mui/icons-material";
 import { Avatar,Link, Box, Button, Container, Grid, Paper, TextField, Typography, FormControlLabel,Checkbox} from "@mui/material";
 import {Link as RouterLink} from "react-router-dom";
-import LoginPage from "./LoginPage";
+
 
 const SignUpPage = () => {
   return (
