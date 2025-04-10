@@ -25,7 +25,7 @@ const SignUpPage = () => {
 
       
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       navigate("/login");      
     },
     onError: (error) => {
